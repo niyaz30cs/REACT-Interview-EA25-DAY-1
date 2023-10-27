@@ -25,3 +25,22 @@ button:hover
   background-color: green;
   color: red;
 }
+.load
+{
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+.navbar
+{
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.Removeline
+{
+  text-decoration: none;
+}

@@ -55,4 +55,32 @@ class component is a statefull component.|function component is a stateless comp
 |Require to save the current state of a process|state of the process are not saved|
 |Design is completed and heavy data must stored.|Server design is simplifier is complex.|
 
+# React Interview Preparation Question DAY-2
+### Q-1.What is NPM?
+***Ans***:-NPM Stands for node package mannager.
+
+- NPM is short for node package manager, an online directory that contains the various already registered open-source packages.
+- NPM modules consume the various functions as a third-party package when installed into an app using the NPM command npm install .
+- Package management.
+- Dependency Management
+- Command-line- interface.
+- Script.
+- Security.
+- open source and community.
+### Q-2. What is event in React Js?
+***Ans:-***
+
+- Events in React JS allow developers to respond to user interaction within their applications quickly and efficiently. 
+- An Event in React is an action that is trigger by the user or the system.Example-mouse click,keyboard press or resize are all event.
+- React has own event called synthetic event.
+- ***Example:-***
+- onClick
+- onSubmit
+- onChange
+- onKeyPress
+- onMouseOver
+- onMouseOut
+
+
+
 
