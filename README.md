@@ -55,6 +55,7 @@ class component is a statefull component.|function component is a stateless comp
 |Require to save the current state of a process|state of the process are not saved|
 |Design is completed and heavy data must stored.|Server design is simplifier is complex.|
 
+
 # React Interview Preparation Question DAY-2
 ### Q-1.What is NPM?
 ***Ans***:-NPM Stands for node package mannager.
@@ -81,6 +82,61 @@ class component is a statefull component.|function component is a stateless comp
 - onMouseOver
 - onMouseOut
 
+### Q-3.Difference between Axios and fetch?
+***Ans***
+|Axios|Fetch|
+|----|----|
+|Easier to work with|Harder to work with|
+|Less verbose|More verbose|
+|Has to be Compiled|Read directly by browser|
+|Third party Library|Vanilla Javascript|
+|it is Faster|Little bit Slower|
+|Easier to error handler|hard to error handler|
+|axios use data property|fetch use body proprty|
+|Need install external library|No need to install any Thing|
 
+# React Interview Preparation Question DAY-3
+
+### Q-1. What is props drilling and state uplifting in ReactJs?
+***Ans:-***
+
+ ***Props Drilling:-*** The component at the top and bottom of the stack need access to the state.
+To do this without Context, we will need to pass the state as "props" through each nested component. This is called "prop drilling".
+
+- props drilling means data pass parent to child one component to another component.
+
+***State uplifting:-*** Lifting state up is a common pattern that is essential for React developers to know. It helps you avoid more complex (and often unnecessary) patterns for managing your state.
+
+- state uplifting means data transfer child to parent.
+
+
+### Q-2. What is ContextApi?
+***Ans:-*** The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
+
+- Context API is a (kind of) new feature added in version 16.3 of React that allows one to share state across the entire app (or part of it) lightly and with ease.
+- The Context API in React is a way for a component to share data with other components without having to pass props down through multiple levels of the component tree.
+
+### Q-3. What is useState hooks?
+***Ans:-***
+
+- The React useState Hook allows us to track state in a function component.
+- State generally refers to data or properties that need to be tracking in an application.
+
+- useState is a React Hook that lets you add a state variable to your component.
+- ***syntax***
+
+const [state, setState] = useState(initialState);
+
+### Q-4. What is useEffect?
+***Ans:-***
+
+- The useEffect Hook allows you to perform side effects in your components.
+- useEffect accepts two arguments. The second argument is optional.
+- useEffect is a React Hook that lets you synchronize a component with an external system.
+- ***syntax:-***
+
+useEffect(setup, dependencies?)
+
+- The useEffect hook is a smooth combination of React’s lifecycle methods like componentDidMount, componentDidUpdate and componentWillUnmount.
 
 
