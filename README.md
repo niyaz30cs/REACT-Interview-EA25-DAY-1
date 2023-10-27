@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# React Interview Preparation Question DAY-1
+### Q-1.What is SPA?
+Ans: 
+- SPA:- stands for Single page Application.
+- A single - page application is a type of web application that loads a single HTML page and dynamically updates the content as the user interface with the application.
+- React is a popular javaScript library for building SPA.
+- SPA use Single HTML file.
+### Q-2. What is Virtual DOM?
+Ans:-
+- **DOM** :-Dom stands for document object model.normally wherever a user request a webpage the browser receive HTML document for the page from the server.
+- Virtual Dom is the lightWeight Representation of your Dom.
+- Two virtual DOM compare to each other for new change this process are called **diffing algorithm**.
+- The new change are update in the real DOM this process are call **Recoincilation**.
+### Q-3. Difference between class and function Component?
+ANS:-
+|Class Component|Function Component|
+|----|----|
+|Class Component define by js class.|Function Component define by js Function.
+|class component is statefull component.|function component is stateless component.
+|***render()*** method present in class component.|***render()*** method not present in function component.
+|***this*** keyword use in class component.|***this*** keyword not present in function component.
+|React-life-cycle method used in class component.|Hooks are used in function component.|
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Q-4.What is package.json?
+***Ans:-*** This is a JSON (javaScript object Notation)file that include key information concerning your project . this is arequired file that is needed to run any react project.
 
-## Available Scripts
+- Name and version.
+- Dependency
+- Scripts
+- Dev Dependencies
 
-In the project directory, you can run:
+### Q-5.What is JSX and why do we used it insted of js?
+***Ans**:-JSX which is Stands for JavaScript XML is a syntax Extension for JavaScript that is Commonlly used is react Application.
 
-### `npm start`
+- It Allow to Write HTML code like writen your JavaScript code.
+- JSX provided Several benefith for building user interface.
+- - Declarative Syntax
+- - Readability
+- - Component Composition
+- - Performance optimization
+- - Ecosystem Supports
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Q-6.What is deference between ReactJS and React Native?
+|React JS|React Native|
+|----|----|
+|React Js is JavaScript library.|React Native is  Mobile framwork.|
+|use to build web application.|use to build cross plateform mobile application.|
+V-Dom render data on browser|Native API for mobile component rendering.|
+|create Robust animation using css.|Need to use API create Animation.|
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Q-7.difference between statefull and stateless component?
+|Statefull|Stateless|
+|----|----|
+class component is a statefull component.|function component is a stateless component.|
+|Require to save the current state of a process|state of the process are not saved|
+|Design is completed and heavy data must stored.|Server design is simplifier is complex.|
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
