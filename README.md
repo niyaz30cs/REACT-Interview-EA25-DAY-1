@@ -139,4 +139,55 @@ useEffect(setup, dependencies?)
 
 - The useEffect hook is a smooth combination of React’s lifecycle methods like componentDidMount, componentDidUpdate and componentWillUnmount.
 
+# React Interview Preparation Question DAY-4
+
+### Q-1. Difference between Callback and useCallBack hooks?
+
+|CallBack|useCallBack|
+|----|----|
+|A callback is function that pass as a argument into another function.|useCallBack is react hook that return a memoized function|
+|A callback is typically used to handle event or to pass data between component.|useCallBack is take two argument function and dependency of array|
+
+### Q-2. Why do you need keys in react js ?
+***Ans:-*** Keys help React identify which items have changed (added/removed/re-ordered). To give a unique identity to every element inside the array, a key is required.
+
+- Identify which elements are added.
+- Identify which elements are updated.
+- Identify which elements are removed.
+
+At this point, you may wonder why do we need it? After all, we could identify elements by their id, className, parent/child, index, props, etc. The answer is because of React's Diffing Algorithm.
+
+### Q-3.what is useMemo in ReactJs?
+***Ans:-*** The useMemo is a hook used in the functional component of react that returns a memoized value.
+
+- The React useMemo Hook returns a memoized value.
+- The useMemo Hook only runs when one of its dependencies update.
+- This can improve performance.
+- 
+
+
+***why use useMeme?***
+
+The basic purpose of the useMemo hook is related to the fact that we try to avoid the unnecessary re-rendering of components and props in our program.
+
+## use cases:-
+
+- Managing DOM element.
+- implementing animation and transition.
+- strong and accessing previous state value.
+- integrating with third party.
+
+### Q-4. What is useReducer hook?
+***Ans:-*** The useReducer Hook is used to store and update states, just like the useState Hook. It accepts a reducer function as its first parameter and the initial state as the second. useReducer returns an array that holds the current state value and a dispatch function to which you can pass an action and later invoke it.
+
+- The useReducer Hook is similar to the useState Hook.
+- It allows for custom state logic.
+- ***syntax:-***
+useReducer(reducer, initialState)
+- reducer
+- dispatch
+- action
+- state
+- initialState
+
 
