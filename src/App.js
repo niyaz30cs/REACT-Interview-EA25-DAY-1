@@ -1,7 +1,10 @@
 import React from 'react'
 import './App.css';
+// import Oponent1 from './Day-5Component/HOcCompo/Oponent1';
+// import Oponent2 from './Day-5Component/HOcCompo/Oponent2';
+import ClassCompo from './Day-5Component/HOcCompo/ReactLifeCycle/ClassCompo';
 // import UseReducerCompo from './Day-4Component/UseCallBackCompo/UseReducerCompo';
-import UseReducer2 from './Day-4Component/UseCallBackCompo/UseReducer2';
+// import UseReducer2 from './Day-4Component/UseCallBackCompo/UseReducer2';
 // import Counter from './CounterComponent/Counter';
 // import ParentCompo from './Day-2Component/PropsComponent/ParentCompo';
 // import ParentCounter from './Day-2Component/CounterComponent/ParentCounter';
@@ -29,7 +32,10 @@ function App() {
       {/* <Parent/> */}
       {/* <UseRefCompo/> */}
       {/* <UseReducerCompo/> */}
-      <UseReducer2/>
+      {/* <UseReducer2/> */}
+      {/* <Oponent1/> */}
+      {/* <Oponent2/> */}
+      <ClassCompo/>
     </>
   )
 }

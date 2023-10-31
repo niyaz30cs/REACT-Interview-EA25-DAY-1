@@ -190,4 +190,40 @@ useReducer(reducer, initialState)
 - state
 - initialState
 
+# React Interview Preparation Question DAY-5
+
+### Q-1.What is HigerOrderComponent?
+***Ans:-*** HigherOrderComponent is a function that take a component as argument
+and some additional functionality and return a new Component.
+
+- In React, a higher-order component is a function that takes a component as an argument and returns a new component that wraps the original component.
+- ***syntax:-***
+const EnhancedComponent = higherOrderComponent(OriginalComponent); 
+
+### Reason to use Higher-Order component:
+- Easy to handle
+- Get rid of copying the same logic in every component
+- Makes code more readable
+
+### Q-2.What is React lifeCycle Method
+***Ans:-*** 
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+
+The three phases are: Mounting, Updating, and Unmounting.
+
+**Mounting:-**
+
+Mounting means putting elements into the DOM.
+
+React has four built-in methods that gets called, in this order, when mounting a component:
+
+- constructor()
+- getDerivedStateFromProps()
+- render()
+- componentDidMount()
+
+### What is memory leak?
+***Ans:-*** A memory leak in React.js can occur when you have objects or resources that are no longer needed but are still being referenced by the application, preventing them from being garbage collected. Over time, this can lead to increased memory usage and degraded performance. 
+
+
 
