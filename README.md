@@ -222,8 +222,56 @@ React has four built-in methods that gets called, in this order, when mounting a
 - render()
 - componentDidMount()
 
-### What is memory leak?
+### Q-3 What is memory leak?
 ***Ans:-*** A memory leak in React.js can occur when you have objects or resources that are no longer needed but are still being referenced by the application, preventing them from being garbage collected. Over time, this can lead to increased memory usage and degraded performance. 
+
+# React Interview Preparation Question DAY-6
+
+### Q-1. Explain reducer as pure function in redux?
+***Ans:-*** In Redux, a reducer is a pure function that takes the current state and an action as its arguments, and returns a new state. It is a fundamental concept in Redux for managing the state of your application. Let's break down what it means for a reducer to be a pure function:
+
+- ***Pure Function:*** A pure function is a function that always produces the same output for the same input, and it has no side effects. In the context of Redux, this means that a reducer's output (the new state) is solely determined by its input (the current state and the action) and nothing else.
+
+- ***Current State:*** The current state is the current representation of your application's data. It is passed as the first argument to the reducer.
+
+- ***Action:*** An action is a plain JavaScript object that describes what happened in your application. It typically has a type property and may include additional data. The reducer takes this action as the second argument.
+
+- ***New State:*** The reducer returns a new state that reflects the changes caused by the action. It should not modify the current state; instead, it creates a new state object with the necessary updates.
+
+### Q-2. What is redux and why it is use?
+***Ans:-*** Redux is a popular state management library for JavaScript applications, often used with libraries like React but also applicable to other frameworks or libraries. It provides a predictable and centralized way to manage the state of your application. Here's why Redux is used and its key benefits:
+
+1. ***Centralized State Management:*** Redux centralizes the state of your application in a single JavaScript object called the "store." This makes it easier to manage and maintain the state, especially in larger and more complex applications.
+
+2. ***Predictable State Changes:*** Redux enforces a unidirectional data flow, which means that changes to the state are predictable and follow a clear pattern. Actions are dispatched to modify the state, and reducers define how those actions affect the state.
+
+3. ***Pure Functions:*** Reducers in Redux are pure functions, which means they have no side effects and always produce the same output for the same input. This predictability simplifies debugging and testing.
+
+4. ***Time-Travel Debugging:*** Redux allows for time-travel debugging, meaning you can go back and forth through the application's state to understand how it reached a certain state, which is incredibly useful for debugging complex applications.
+
+5. ***Easier Testing:*** The predictability and purity of Redux functions make it easier to write unit tests for your application's state management logic.
+
+5. ***Component Isolation:*** Redux promotes the idea of separating the UI components from the state management logic. This separation of concerns makes your code more modular and easier to maintain.
+
+6. ***Middleware Support:*** Redux provides a middleware mechanism that allows you to intercept and process actions before they reach the reducers. This is useful for tasks like asynchronous data fetching, logging, or routing.
+
+7. ***Community and Ecosystem:*** Redux has a large and active community, and there are many useful extensions and tools available to enhance your development experience, like Redux DevTools for debugging.
+
+8. ***Scalability:*** Redux is designed to scale with your application as it grows. It can handle complex state management needs without becoming unwieldy.
+
+Redux is commonly used in web applications, including React applications, but it can be applied to other JavaScript environments as well. It is especially beneficial for applications with complex data flows or when you need a high level of control over how data is managed and updated in your app.
+
+
+### Q-3.Why do we use redux thunk?
+***Ans:-*** Redux Thunk is a middleware for Redux that is used to handle asynchronous actions in a Redux application. Here's why you might use Redux Thunk:
+
+1. ***Handling Asynchronous Actions:*** Redux Thunk allows you to dispatch functions as actions, not just plain objects. This is particularly useful for managing asynchronous operations, like making API requests or interacting with web services. You can dispatch actions at different stages of an asynchronous operation (e.g., request sent, request successful, request failed).
+
+2. ***Simplified Action Creators:*** Without Redux Thunk, action creators are typically plain objects. With Redux Thunk, action creators can return functions that have access to the dispatch function. This simplifies the process of creating actions for asynchronous operations.
+
+3. ***Separation of Concerns:*** By using Redux Thunk, you can separate the logic for making API requests and handling the results from the components that trigger these actions. This promotes a cleaner and more maintainable codebase.
+
+3. ***Cancelable Actions:*** You can implement features like canceling in-flight requests or handling race conditions when multiple actions are dispatched concurrently.
 
 
 
